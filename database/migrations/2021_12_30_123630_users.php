@@ -18,7 +18,7 @@ class Users extends Migration
             $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->string('phone')->unique();
-            $table->string('roles');
+            $table->string('role')->default('user');;
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
